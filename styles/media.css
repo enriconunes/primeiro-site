@@ -1,0 +1,39 @@
+@media screen and (max-width: 1150px) /*aplica quando o ecran for/estiver < 1150px*/{
+    header{
+        flex-direction: column;
+    }
+
+    ul{
+        text-align: center;
+    }
+
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h2{
+        font-size: 38px;
+    }
+
+    form{
+        margin: 0 auto;
+        width: 100%;
+
+    }
+
+    input{
+        align-self: center;
+        width: 100%;
+    }
+
+    img{
+        padding-top: 80px;
+        width: 350px;
+    }
+
+    article{
+        margin: auto;
+    }
+
+}

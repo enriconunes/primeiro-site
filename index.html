@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <div id="wrap">
+    <div id="grid">
+      <header>
+            <a href=""><img src="./components/images/logoBranco.png" alt="logo-luzdalua" id="logo"></a>
+        <nav>
+        <ul>
+            <a href="#"><li>Início</li></a>
+            <a href="#"><li>Serviços</li></a>
+            <a href="#"><li>Quadros</li></a>
+            <a href="#"><li>Sobre</li></a>
+            <a href="#"><li>Contato</li></a>
+            <a href="#" id="signBtn"><li>Já tem uma conta?</li></a>
+        </nav>
+        </ul>
+      </header>
+
+      <section id="section1">
+        <h2>Personalize seu ambiente com nossos quadros!</h2>
+        <!-- INICIO CAROUSEL -->
+        <!-- cada carousel deve ter um id diferente em cada pagina. esse id deve tb ser alterado em 'data-bs-target'-->
+
+        <div class="carousel-quadros">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="./components/images/quadro2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./components/images/quadro1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="./components/images/quadro3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- FIM CAROUSEL -->
+        <h3>Conheça nossos quadros autorais para dar personalidade ao seu ambiente!</h3>
+      </section>
+
+      <section id="section2">
+        <h2>Nos chame para fotografar o seu evento!</h2>
+        <img src="./components/images/evento.jpg" alt="imagem-evento" id="imagem-evento">
+        <h3>Temos uma equipe preparada para fotografar o seu evento! Entre em contato para mais informações.</h3>
+      </section>
+
+      <section id="section3">
+
+        <div class="newsletter">
+            <div class="titulo-newsletter">
+                <h2 class="inscreva-se"><span>Inscreva-se agora</span></h2>
+                <h2 class="inscreva-se">na nossa Newsletter!</h2>
+            </div>
+            <div>
+                <p class="justificar">
+                    Fique sempre por dentro de tudo o que acontecer conosco e receba as novidades em primeira mão! Por aqui, podemos te notificar sobre as ofertas dos nossos quadros e serviços, alterações na agenda de trabalho e lançamentos de novos produtos!
+                </p>
+            </div>
+            <form>
+                <input type="text" placeholder="Nome"> <br>
+                <input type="email" placeholder="Email"> <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+      </section>
+
+      <aside>
+        <!-- INICIO DO CAROUSEL ASIDE -->
+            <!-- cada carousel deve ter um id diferente em cada pagina. esse id deve tb ser alterado em 'data-bs-target'-->
+            <div>
+            <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="true" >
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./components/images/thais1.jpg" class="d-block w-100" alt="modelo-thais1">
+
+                        <div class="carousel-caption">
+                            <h3>Thais Pereira</h3>
+                            <p>Porto Seguro BA, Brasil - 2020</p>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./components/images/thais2.jpg" class="d-block w-100" alt="modelo-thais2">
+
+                        <div class="carousel-caption">
+                            <h3>Thais Pereira</h3>
+                            <p>Porto Seguro BA, Brasil - 2020</p>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./components/images/thais3.jpg" class="d-block w-100" alt="modelo-thais3">
+
+                        <div class="carousel-caption">
+                            <h3>Thais Pereira</h3>
+                            <p>Porto Seguro BA, Brasil - 2020</p>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            </div>
+        <!-- FIM DO CAROUSEL ASIDE -->
+      </aside>
+
+      <footer>
+        <p>Encontre-nos nas redes sociais!</p>
+        <div class="links-footer">
+            <div>      
+                <a href="https://instagram.com/luzdalua.jpg?igshid=YzdkMWQ2MWU=" class="redes-sociais" target="_blank"> <img src="./components/images/instagram.png" alt="" class="logo-redes"> Instagram</a>
+            </div>
+            <div>          
+                <a href="https://twitter.com/luzdalua_jpg?s=20&t=bz1GZu52DHiYPMUbP6ISdQ" class="redes-sociais" target="_blank"> <img src="./components/images/twitter.png" alt="" class="logo-redes"> Twitter</a>
+            </div>
+            <div>
+                <a href="https://www.pexels.com/@enrico-martins-1401051/" target="_blank"> <img src="./components/images/pexels.png" alt="" class="logo-redes"> Pexels</a>
+            </div>
+            
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,195 @@
+body {
+    background-color: rgb(210, 223, 233);
+    color: white;
+    font-family: poppinsregular;
+    /* max-width: 1200px; largura da pagina */
+    margin: 0 auto; /*sem espaços em cima e embaixo. auto: alinha o conteudo no meio*/
+}
+
+
+#grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr; /*possui duas colunas, onde a primeira é 2x maior que a segunda*/
+    grid-template-rows: 120px minmax(250px, max-content) minmax(250px, max-content) minmax(250px, max-content) 120px; /*possui 5 linhas. a 2º, 3º e 4º possuem tamanho minimo definido mas o tamanho maximo é infinito, onde este se ajusta de acordo com o tamanho do conteudo*/
+    grid-template-areas: 
+    "header header" /*LINHA 1. Composto por: 1º coluna HEADER e 2º coluna HEADER*/
+    "section1 section1" /*LINHA 2. Composto por: 1º coluna SECTION1 e 2º coluna ASIDE*/
+    "section2 section2"
+    "section3 aside" /*LINHA 3. Composto por: 1º coluna SECTION2 e 2º coluna ASIDE*/
+    "footer footer"; /*LINHA 4. Composto por: 1º coluna FOOTER e 2º coluna FOOTER*/
+    gap: 5px; /*espaçamento entre os containers*/
+}
+
+
+header{
+    background-color: rgb(0, 15, 53);
+    grid-area: header; /*'header' corresponde ao 'header' usado no #grid.*/
+    display: flex; /*pode-se movimentar os itens dentro do header*/
+    flex-direction: row; /*organizar os elementos do header em linhas*/
+    justify-content: space-between; /*criar um espaçamento automatico entre os elementos do header*/
+    align-items: center; /*alinhar os elementos horizontalmente (mesmo espaço em cima e embaixo)*/ /*INVERSO*/
+    padding: 0 25px;
+}
+
+#logo {
+    max-width: 200px;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(210, 223, 233);
+    transition: 0.3s all;
+}
+
+
+#signBtn {
+    border: 2px solid rgb(210, 223, 233);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#signBtn:hover {
+    color: white;
+    background-color: rgb(0, 6, 22);
+}
+
+
+aside{
+    grid-area: aside;
+    margin-top: 30px;
+    padding-right: 160px;
+}
+
+#section1{
+    background-color: rgb(0, 15, 53);
+    grid-area: section1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 0 0;
+    padding: 30px 0;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: poppinsmedium;
+}
+
+.carousel-quadros{
+    border: solid 4px;
+    max-width: 1200px;
+} 
+
+#section2{
+    background-color: rgb(0, 15, 53);
+    grid-area: section2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+    padding: 30px 0;
+}
+
+#imagem-evento{
+    max-width: 1200px;
+    border: solid 4px;
+}
+
+#section3 {
+    grid-area: section3;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding-left: 150px;
+}
+
+h3{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+aside{
+    margin-bottom: 30px;
+}
+
+.newsletter{
+    max-width: 650px;
+    margin-bottom: 50px;
+}
+
+.titulo-newsletter {
+    margin-bottom: 25px;
+}
+
+.justificar{
+    text-align: justify;
+    color: rgb(19, 47, 118);
+    font-family: 'poppinsbold';
+} 
+
+.inscreva-se{
+    font-size: 60px;
+    line-height: 50px;
+    color: rgb(19, 47, 118);
+    
+}
+
+span {
+    color: rgb(0, 15, 53);
+}
+
+input {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 50%;
+}
+
+form [type="submit"] {
+    background-color: rgb(0, 15, 53);
+    border: 2px solid rgb(210, 223, 233);
+    color: white;
+    font-weight: bold;
+    width: 25%; /*25% do total da section*/
+}
+
+form [type="submit"]:hover {
+    cursor: pointer;
+    background-color: rgb(0, 6, 22);
+    color: white;
+    transition: 0.3s;
+}
+
+
+footer{
+    background-color: rgb(0, 15, 53);
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.links-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-redes{
+    max-width: 20px;
+}
+
+.redes-sociais{
+    padding: 0 30px 0 0; 
+}
